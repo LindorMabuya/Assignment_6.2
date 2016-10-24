@@ -17,3 +17,17 @@ The demographic information of the subscriber determines the cover plan to which
 The subscriber’s plan includes information about payment methods, this can be deductions from the subscriber’s personal account, a provider which can be an employer if the insurance cover was accumulated through work or through a benefit set it’s for the dependents.
 
 All these payment methods are processed according to the provider of the services of the insurance, which can be a hospital, private doctor or any other third party.
+
+#MobiHealthcare
+
+####Mobile healthcare that puts members first
+MobiHealthcare is a pre-built app and mobile healthcare insurance that enables members to manage their care from their favourite device. The result? Happy members who remain loyal customers.
+
+####On-the-go healthcare for anytime, anywhere care
+MobiHealthcare allows members to manage their health plans, benefits, prescriptions, and research for medication, providers, plans and more from any digital channel - mobile, tablet, or desktop. That means healthcare organizations can leverage every channel in a holistic way, empowering individuals with:
+
+•	Plan management: thus increasing member satisfaction
+
+•	Research: helping grow member base for healthcare payers
+
+•	Medication adherence: helping grow member base for healthcare payers
