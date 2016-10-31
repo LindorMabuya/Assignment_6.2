@@ -12,6 +12,7 @@ public class CoverageTable extends Table {
 
     private final String tableName = "coverage";
     private final Attribute id = new Attribute("id", "INTEGER");
+    private final Attribute coverAmount = new Attribute("coverAmount", "DOUBLE");
 
     @Override
     public String getTableName() {
@@ -27,11 +28,17 @@ public class CoverageTable extends Table {
         return id;
     }
 
+    public Attribute getAttributeCoverAmount() {
+        return coverAmount;
+    }
+
+
     @Override
     public ArrayList<Attribute> getAllAttributes() {
 
         ArrayList<Attribute> attributes = new ArrayList<>();
         attributes.add(id);
+        attributes.add(coverAmount);
 
         return  attributes;
     }

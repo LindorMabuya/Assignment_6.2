@@ -14,7 +14,7 @@ public class DeductibleFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        deductible = DeductibleFactory.getDeductible(1L);
+        deductible = DeductibleFactory.getDeductible(1L, 120);
     }
 
     @Test

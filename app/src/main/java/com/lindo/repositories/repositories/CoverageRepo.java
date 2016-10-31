@@ -54,7 +54,8 @@ public class CoverageRepo extends SQLiteOpenHelper {
         coverageTable  = new CoverageTable();
         contentValues = new ContentValues();
 
-       // contentValues.put(coverage.getAttributeId().name, coverage.getId());
+        contentValues.put(coverageTable.getAttributeId().name, coverage.getId());
+        contentValues.put(coverageTable.getAttributeCoverAmount().name, coverage.getCoverAmount());
 
         try {
             returned = localDatabase.insert(coverageTable.getTableName(), null, contentValues);
@@ -76,7 +77,7 @@ public class CoverageRepo extends SQLiteOpenHelper {
 
         if(data.getCount() != 0) {
             while (data.moveToNext()) {
-                coverageFound = CoverageFactory.getCoverage(data.getLong(0));
+                coverageFound = CoverageFactory.getCoverage(data.getLong(0), data.getDouble(1));
             }
         }
         return coverageFound;
@@ -92,7 +93,7 @@ public class CoverageRepo extends SQLiteOpenHelper {
 
         if(data.getCount() != 0) {
             while (data.moveToNext()) {
-                coverageFound = CoverageFactory.getCoverage(data.getLong(0));
+                coverageFound = CoverageFactory.getCoverage(data.getLong(0), data.getDouble(1));
                 coverages.add(coverageFound);
             }
         }

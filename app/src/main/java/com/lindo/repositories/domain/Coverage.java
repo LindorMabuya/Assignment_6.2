@@ -7,9 +7,11 @@ import java.io.Serializable;
  */
 public class Coverage implements Serializable {
     private long id;
+    private double coverAmount;
 
     public Coverage(Builder builder) {
         id = builder.id;
+        coverAmount = builder.coverAmount;
     }
 
     public long getId() {
@@ -20,6 +22,14 @@ public class Coverage implements Serializable {
         this.id = id;
     }
 
+    public double getCoverAmount() {
+        return coverAmount;
+    }
+
+    public void setCoverAmount(double coverAmount) {
+        this.coverAmount = coverAmount;
+    }
+
     public boolean isCovered(){
         System.out.print("Coverage: Validating health insurance claim.....\n");
         return true;
@@ -27,6 +37,7 @@ public class Coverage implements Serializable {
     }
     public static class Builder{
         private long id;
+        private double coverAmount;
 
         public Builder id(long value)
         {
@@ -34,8 +45,15 @@ public class Coverage implements Serializable {
             return this;
         }
 
+        public Builder coverAmount(double value)
+        {
+            this.coverAmount = value;
+            return this;
+        }
+
         public Builder copy(Coverage value) {
             this.id = value.getId();
+            this.coverAmount = value.getCoverAmount();
             return this;
         }
 

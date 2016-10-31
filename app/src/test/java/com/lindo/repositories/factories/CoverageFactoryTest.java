@@ -14,7 +14,7 @@ public class CoverageFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        coverage = CoverageFactory.getCoverage(1L);
+        coverage = CoverageFactory.getCoverage(1L, 200);
     }
 
     @Test

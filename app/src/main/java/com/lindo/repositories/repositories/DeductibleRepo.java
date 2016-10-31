@@ -54,7 +54,8 @@ public class DeductibleRepo extends SQLiteOpenHelper {
         deductibleTable  = new DeductibleTable();
         contentValues = new ContentValues();
 
-        // contentValues.put(deductible.getAttributeId().name, deductible.getId());
+         contentValues.put(deductibleTable.getAttributeId().name, deductible.getId());
+         contentValues.put(deductibleTable.getAttributeDeductibleAmount().name, deductible.getDeductionAmount());
 
         try {
             returned = localDatabase.insert(deductibleTable.getTableName(), null, contentValues);
@@ -76,7 +77,7 @@ public class DeductibleRepo extends SQLiteOpenHelper {
 
         if(data.getCount() != 0) {
             while (data.moveToNext()) {
-                deductibleFound = DeductibleFactory.getDeductible(data.getLong(0));
+                deductibleFound = DeductibleFactory.getDeductible(data.getLong(0), data.getDouble(1));
             }
         }
         return deductibleFound;
@@ -92,7 +93,7 @@ public class DeductibleRepo extends SQLiteOpenHelper {
 
         if(data.getCount() != 0) {
             while (data.moveToNext()) {
-                deductibleFound = DeductibleFactory.getDeductible(data.getLong(0));
+                deductibleFound = DeductibleFactory.getDeductible(data.getLong(0), data.getDouble(1));
                 deductibles.add(deductibleFound);
             }
         }

@@ -12,6 +12,8 @@ public class DeductibleTable extends Table {
 
     private final String tableName = "deductible";
     private final Attribute id = new Attribute("id", "INTEGER");
+    private final Attribute deductibleAmount = new Attribute("deductibleAmount", "DOUBLE");
+
 
     @Override
     public String getTableName() {
@@ -27,11 +29,16 @@ public class DeductibleTable extends Table {
         return id;
     }
 
+    public Attribute getAttributeDeductibleAmount() {
+        return deductibleAmount;
+    }
+
     @Override
     public ArrayList<Attribute> getAllAttributes() {
 
         ArrayList<Attribute> attributes = new ArrayList<>();
         attributes.add(id);
+        attributes.add(deductibleAmount);
 
         return  attributes;
     }
