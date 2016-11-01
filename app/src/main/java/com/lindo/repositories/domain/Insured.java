@@ -7,23 +7,17 @@ import java.io.Serializable;
  */
 public class Insured implements Serializable {
     private long id;
-    private Plan plan;
     private DemographicInfo demographicInfo;
     private Physician physician;
 
     public Insured(Builder builder) {
         id = builder.id;
         demographicInfo = builder.demographicInfo;
-        plan = builder.plan;
         physician = builder.physician;
     }
 
     public long getId() {
         return id;
-    }
-
-    public Plan getPlan() {
-        return plan;
     }
 
     public Physician getPhysician() {
@@ -37,7 +31,6 @@ public class Insured implements Serializable {
 
     public static class Builder{
         private long id;
-        private Plan plan;
         private DemographicInfo demographicInfo;
         private Physician physician;
 
@@ -46,11 +39,7 @@ public class Insured implements Serializable {
             this.id = value;
             return this;
         }
-        public Builder plan(Plan value)
-        {
-            this.plan = value;
-            return this;
-        }
+
         public Builder demographicInfo(DemographicInfo value)
         {
             this.demographicInfo = value;
@@ -64,7 +53,6 @@ public class Insured implements Serializable {
         public Builder copy(Insured value)
         {
             this.id = value.getId();
-            this.plan = value.getPlan();
             this.demographicInfo = value.getDemographicInfo();
             this.physician = value.getPhysician();
             return this;

@@ -9,10 +9,9 @@ import com.lindo.repositories.domain.Plan;
  * Created by bishop v on 2016-10-31.
  */
 public class InsuredFactory {
-    public static Insured getInsured(long id, Plan plan, DemographicInfo demographicInfo, Physician physician){
+    public static Insured getInsured(long id, DemographicInfo demographicInfo, Physician physician){
         return new Insured.Builder()
                 .id(id)
-                .plan(plan)
                 .demographicInfo(demographicInfo)
                 .physician(physician)
                 .build();

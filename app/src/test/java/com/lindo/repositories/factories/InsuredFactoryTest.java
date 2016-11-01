@@ -14,13 +14,12 @@ import org.junit.Test;
  */
 public class InsuredFactoryTest {
     private Insured insured;
-    private Plan plan;
     private DemographicInfo demographicInfo;
     private Physician physician;
 
     @Before
     public void setUp() throws Exception {
-        insured = InsuredFactory.getInsured(1L,plan,demographicInfo,physician);
+        insured = InsuredFactory.getInsured(1L,demographicInfo,physician);
     }
 
     @Test
