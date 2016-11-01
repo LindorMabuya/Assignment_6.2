@@ -7,7 +7,7 @@ import com.lindo.repositories.domain.ThirdParty;
 import com.lindo.repositories.factories.ThirdPartyFactory;
 
 /**
- *
+ * lindor
  */
 public class ThirdPartyRepoTest extends AndroidTestCase {
     private ThirdPartyRepo thirdPartyRepo;

@@ -8,7 +8,7 @@ import com.lindo.repositories.factories.AddressFactory;
 
 
 /**
- *
+ * lindor
  */
 public class AddressRepoTest extends AndroidTestCase{
     private AddressRepo addressRepo;

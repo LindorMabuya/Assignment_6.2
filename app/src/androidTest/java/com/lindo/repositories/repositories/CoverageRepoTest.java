@@ -8,7 +8,7 @@ import com.lindo.repositories.factories.CoverageFactory;
 
 
 /**
- *
+ * lindor
  */
 public class CoverageRepoTest extends AndroidTestCase {
     private CoverageRepo coverageRepo;

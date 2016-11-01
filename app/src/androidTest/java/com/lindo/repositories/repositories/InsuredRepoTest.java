@@ -9,7 +9,7 @@ import com.lindo.repositories.domain.Physician;
 import com.lindo.repositories.factories.InsuredFactory;
 
 /**
- *
+ * lindor
  */
 public class InsuredRepoTest extends AndroidTestCase {
     private InsuredRepo insuredRepo;

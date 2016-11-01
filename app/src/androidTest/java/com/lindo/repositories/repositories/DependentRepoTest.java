@@ -7,7 +7,7 @@ import com.lindo.repositories.domain.Dependent;
 import com.lindo.repositories.factories.DependentFactory;
 
 /**
- *
+ * lindor
  */
 public class DependentRepoTest extends AndroidTestCase {
     private DependentRepo dependentRepo;

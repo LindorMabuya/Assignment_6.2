@@ -8,7 +8,7 @@ import com.lindo.repositories.domain.DemographicInfo;
 import com.lindo.repositories.factories.DemographicInfoFactory;
 
 /**
- *
+ * lindor
  */
 public class DemographicInfoRepoTest extends AndroidTestCase{
     private DemographicInfoRepo demographicInfoRepo;

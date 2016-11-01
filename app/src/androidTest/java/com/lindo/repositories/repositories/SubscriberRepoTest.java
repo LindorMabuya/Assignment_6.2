@@ -8,7 +8,7 @@ import com.lindo.repositories.domain.Subscriber;
 import com.lindo.repositories.factories.SubscriberFactory;
 
 /**
- *
+ * lindor
  */
 public class SubscriberRepoTest extends AndroidTestCase {
 

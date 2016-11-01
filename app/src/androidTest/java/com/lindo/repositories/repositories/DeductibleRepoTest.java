@@ -7,7 +7,7 @@ import com.lindo.repositories.domain.Deductible;
 import com.lindo.repositories.factories.DeductibleFactory;
 
 /**
- *
+ * lindor
  */
 public class DeductibleRepoTest extends AndroidTestCase {
     private DeductibleRepo deductibleRepo;

@@ -7,7 +7,7 @@ import com.lindo.repositories.domain.Physician;
 import com.lindo.repositories.factories.PhysicianFactory;
 
 /**
- *
+ * lindor
  */
 public class PhysicianRepoTest extends AndroidTestCase {
 
