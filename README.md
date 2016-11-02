@@ -12,3 +12,16 @@ MobiHealthcare allows members to manage their health plans, benefits, prescripti
 •	Research: helping grow member base for healthcare payers
 
 •	Medication adherence: helping grow member base for healthcare payers
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+##Service Choice
+
+Intent Services: a base class for Services that handle asynchronous requests on demand.
+
+Reasons:
+
+> work queue processor (offload tasks from an application's main thread).
+> preferred way for doing long running background operations.
+> don’t want service to handle multiple requests simultaneously.
+------------------------------------------------------------------------------------------------------------------------------------------
