@@ -20,8 +20,8 @@ Intent Services: a base class for Services that handle asynchronous requests on 
 
 Reasons:
 
-> work queue processor (offload tasks from an application's main thread).
-> preferred way for doing long running background operations.
-> don’t want service to handle multiple requests simultaneously.
+- work queue processor (offload tasks from an application's main thread).
+- preferred way for doing long running background operations.
+- don’t want service to handle multiple requests simultaneously.
 
 
